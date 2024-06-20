@@ -1,0 +1,156 @@
+@import '_colors.scss';
+@import '_font.scss';
+
+main {
+    display: flex;
+    align-items: center;
+    background-color: $color-white;
+    gap: 50px;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    width: 600px;
+    height: 700px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    #cardArea {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    h1 {
+        font-family: "Press Start 2P", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        margin: 30px;
+
+    }
+}
+
+.card-panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 600;
+    height: 900px; /* Defina a altura fixa desejada */
+    overflow-y: auto; /* Adiciona scrollbar vertical */
+    overflow-x: hidden; /* Esconde scrollbar horizontal, se houver */
+    
+}
+
+.card {
+    background: $color04;
+    color: $color-white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 4px solid $color-black;
+    width: 196px;
+    height: 258px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.card h3, .card p {
+    margin: 10px 0;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.card .delete-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+
+
+.container2 #card-form h2 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+    margin: 10px 0;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid $color03;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: $color03;
+    color: $color-white;
+    width: 100%;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+#image-upload {
+    display: none;
+}
+
+#file-upload-filename {
+    font-size: 16px;
+    color: #333;
+    vertical-align: middle;
+}
+
+button[type="submit"] {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 20px;
+    background-color: $color02;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
